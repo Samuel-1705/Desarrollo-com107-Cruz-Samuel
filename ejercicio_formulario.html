@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/estilos.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Formulario de Registro</h1>
+    <form >
+        <label for="fname">Nombre:</label>
+        <input type="text" id="id_nombre" name="nombre" value=""> <br> <br>
+        <label for="fname">Apellido:</label> 
+        <input type="text" id="id_apellido" name="Apellido" value=""> <br> <br>
+        <label for="fname" > Edad</label>
+        <input type="text" id="id_edad" name="edad" value=""> <br> <br>
+        <input type="radio" name="titulacion" value="ITIS" > Menor de 18  <br> 
+        <input type="radio" name="titulacion" value="ITIS" > Mayor de 18  <br> <br>
+
+        <label for="fname" > Sexo: </label> <br> 
+        <SELECT NAME="titulacion">
+            <OPTION VALUE="II" SELECTED> ---
+            <OPTION VALUE="ITIG">Masculino
+            <OPTION VALUE="ITIS">Femenino
+            </SELECT>
+        <br> <br>
+        <label for="fname" > Idiomas: </label> <br> 
+        <SELECT SIZE="3" NAME="idiomas[]“ MULTIPLE >
+            <OPTION VALUE="ingles" SELECTED>Inglés
+            <OPTION VALUE="frances">Francés
+            <OPTION VALUE="aleman">Alemán
+            <OPTION VALUE="holandes">Holandés
+            </SELECT>
+            <br><br> 
+
+        <label for="fname" > Otros: </label> <br> 
+        <INPUT TYPE="checkbox" NAME="extras[]" VALUE="Auto"> Auto
+            <INPUT TYPE="checkbox" NAME="extras[]" VALUE="Camioneta">Camioneta
+            <INPUT TYPE="checkbox" NAME="extras[]" VALUE="Camion">Camion
+        <br> <br>
+        <label for="fname" > Comentario: </label> <br>
+        <TEXTAREA COLS=“30” ROWS=“60” NAME="comentario">
+            
+            </TEXTAREA>
+        <br> <br>
+        <input type="submit"value="Enviar Datos" >  <input type="submit"value="Borrar Datos" >           
+
+    </form>
+</body>
+</html>
